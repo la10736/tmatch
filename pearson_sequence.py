@@ -13,8 +13,8 @@ if __name__ == "__main__":
     if len(sys.argv) < 5:
         print("usage {} <start> <end> <sequence_a> <sequence_b>".format(sys.argv[0]))
         sys.exit(-1)
-    start = sys.argv[1]
-    end = sys.argv[2]
+    start = int(sys.argv[1])
+    end = int(sys.argv[2])
     seq_a = sequence(sys.argv[3])
     seq_b = sequence(sys.argv[4])
     print("Pearson = {}".format(pearson(seq_a, seq_b, start, end)))
